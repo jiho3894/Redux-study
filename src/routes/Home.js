@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 
-function Home(props) {
-  console.log(props);
+function Home({ toDos }) {
+  console.log(toDos);
   const [text, setText] = useState("");
   function onChange(e) {
     setText(e.target.value);
