@@ -15,7 +15,12 @@ function Home({ toDos }) {
     <React.Fragment>
       <h1>To Do</h1>
       <form onSubmit={onSubmit}>
-        <input type="text" value={text} onChange={onChange} />
+        <input
+          type="text"
+          placeholder="write to do..."
+          value={text}
+          onChange={onChange}
+        />
         <button>Add</button>
       </form>
       <ul></ul>
